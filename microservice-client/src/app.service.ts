@@ -26,23 +26,3 @@ export class AppService {
     return 'Hello World!';
   }
 }
-
-// import { ClientProxyFactory } from '@nestjs/microservices';
-// import { Logger } from '@nestjs/common';
-// import { ClientOptions, Transport } from '@nestjs/microservices';
-
-// const logger = new Logger('Main');
-
-// const microServicesOptions: ClientOptions = {
-//   transport: Transport.TCP,
-//   options: {
-//     host: '127.0.0.1',
-//     port: 3000,
-//   },
-// };
-
-// const client = ClientProxyFactory.create(microServicesOptions);
-
-// client
-//   .send<number, number[]>('add', [1, 2, 2])
-//   .subscribe(result => logger.log(result));
